@@ -1,8 +1,26 @@
+# Local dependencies and generated outputs
 node_modules/
 dist/
 build/
 coverage/
-
-.env
-.env.local
 .DS_Store
+
+# Secrets and local overrides (including nested projects)
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.venv/
+secrets/
+.ssh/
+*.local
+
+# Machine-specific copies; commit only reviewed examples
+*.backup
+*.bak
+*.pysave

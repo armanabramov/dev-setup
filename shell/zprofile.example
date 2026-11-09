@@ -1,0 +1,10 @@
+# REFERENCE ONLY: adapt and merge with your actual ~/.zprofile.
+# Actual origin environment used Homebrew on Apple Silicon.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Optional: on the original Mac Python 3.14 from python.org installer:
+PATH="/Library/Frameworks/Python.framework/Versions/3.14/bin:${PATH}"
+export PATH
+
+# Optional: Codex installer CLI bin directory
+export PATH="$HOME/.local/bin:$PATH"

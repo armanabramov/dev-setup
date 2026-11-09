@@ -1,0 +1,22 @@
+# Safe subset of settings reconstructed from this setup.
+# DO NOT copy this over ~/.gitconfig without merging existing settings.
+# No user.name, user.email or credentials intentionally included.
+
+[init]
+    defaultBranch = main
+
+[core]
+    editor = code --wait
+
+[alias]
+    st = status --short --branch
+    br = branch
+    sw = switch
+    new = switch -c
+    lg = log --graph --oneline --decorate --all -20
+    last = log -1 --stat
+    df = diff
+    ds = diff --staged
+    unstage = restore --staged
+    ci = commit
+    root = rev-parse --show-toplevel

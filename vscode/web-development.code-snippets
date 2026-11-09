@@ -1,0 +1,35 @@
+{
+  "Console Log": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "clg",
+    "body": [
+      "console.log(${1:value});",
+      "$0"
+    ],
+    "description": "Вывести значение в консоль"
+  },
+  "Async Function": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "afn",
+    "body": [
+      "async function ${1:loadData}(${2}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Создать асинхронную функцию"
+  },
+  "React Function Component": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "rcomp",
+    "body": [
+      "export default function ${1:ComponentName}() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t);",
+      "}"
+    ],
+    "description": "Создать функциональный React-компонент"
+  }
+}
